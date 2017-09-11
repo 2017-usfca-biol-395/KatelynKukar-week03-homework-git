@@ -11,9 +11,9 @@ cd data
 touch data/.gitkeep
 cd raw_data
 touch raw_data/.gitkeep 
-curl -L http://npk.io/PU1BaY+ -o fasta-archive.zip
+curl -L http://npk.io/PUlBaY+ -o fasta-archive.zip
 unzip fasta-archive.zip
-touch fasta-archive.zip/.gitkeep
+
 
 echo "downloading zip files"
 echo "unzipping zip files"
