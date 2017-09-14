@@ -1,8 +1,8 @@
+#!/bin/bash 
 # This is a project setup for BioInformatics Homework 1
 # Katelyn Kukar kbkuk@usfca.edu
 # September 11th, 2017
 
-#!/bin/bash
 
 mkdir code data
 touch code/.gitkeep
@@ -10,18 +10,16 @@ mkdir data/raw_data
 cd data
 touch data/.gitkeep
 cd raw_data
-touch raw_data/.gitkeep 
-curl -L http://npk.io/PUlBaY+ -o fasta-archive.zip
-unzip fasta-archive.zip
-
 
 echo "downloading zip files"
+ 
+curl -L http://npk.io/PUlBaY+ -o fasta-archive.zip
+unzip fasta-archive.zip
+rm fasta-archive.zip
+
 echo "unzipping zip files"
 
-touch raw_data/.gitkeep
 cd ../..
-
-echo "return to directory main"
 
 mkdir output
 cd output
@@ -35,6 +33,6 @@ cd tables
 touch tables/.gitkeep
 
 
-echo "running directories"
-echo "all done"
+echo "All directories completed"
+echo "All done"
 
